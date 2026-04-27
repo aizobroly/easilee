@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easilee — AI-Powered Automation Agency</title>
+    <meta name="description"
+        content="Easilee automates your repetitive day-to-day tasks — lead capturing, CRM flows, payments, scheduling & more — so you can focus on growing your business.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- THREE.JS CANVAS -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-mark">E</div>
+                <span class="logo-text">easilee</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <div class="eyebrow-dot"></div>
+                <span>AI-Powered Automation</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Automation</span>
+                <span class="title-line">Made <em class="gradient-text">Easy.</em></span>
+            </h1>
+            <p class="hero-sub">
+                We automate your repetitive day-to-day tasks — lead capturing, CRM flows,
+                payments, scheduling & more — so you can focus on growing your business.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">
+                    <span>Start Your Project</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#work" class="btn-ghost">See Our Work</a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric">
+                    <span class="metric-num" data-count="150">0</span><span class="metric-suffix">+</span>
+                    <span class="metric-label">Automations Built</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric">
+                    <span class="metric-num" data-count="98">0</span><span class="metric-suffix">%</span>
+                    <span class="metric-label">Client Satisfaction</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric">
+                    <span class="metric-num" data-count="500">0</span><span class="metric-suffix">+</span>
+                    <span class="metric-label">Hours Saved Weekly</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-intro">
+                <span class="label">What We Do</span>
+                <h2>Services we <em class="gradient-text">offer</em></h2>
+                <p>Automate the repetitive. Focus on what matters.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="card-number">01</div>
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Lead Automation</h3>
+                    <p>Automated lead capturing from all your channels with intelligent routing, scoring, and nurture
+                        sequences — designed for real estate agencies.</p>
+                    <div class="card-tags"><span>Real Estate</span><span>Lead Gen</span><span>Auto-Routing</span></div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="card-number">02</div>
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            <path d="M8 9h8M8 13h4" />
+                        </svg>
+                    </div>
+                    <h3>Follow-Up Automation</h3>
+                    <p>Never miss a lead again. Automated follow-up sequences via email, SMS, and WhatsApp that nurture
+                        prospects into clients on autopilot.</p>
+                    <div class="card-tags"><span>Real Estate</span><span>Follow-ups</span><span>Nurturing</span></div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="card-number">03</div>
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+                            <path d="M14.05 6A5 5 0 0 1 18 10" />
+                        </svg>
+                    </div>
+                    <h3>Callback Handlers</h3>
+                    <p>Smart callback scheduling and handling — automatically manage missed calls, schedule callbacks,
+                        and ensure every inquiry is attended to.</p>
+                    <div class="card-tags"><span>Real Estate</span><span>Callbacks</span><span>Scheduling</span></div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="card-number">04</div>
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                            <line x1="12" y1="19" x2="12" y2="23" />
+                            <line x1="8" y1="23" x2="16" y2="23" />
+                        </svg>
+                    </div>
+                    <h3>Voice / Call Agents</h3>
+                    <p>AI-powered voice agents that handle inbound and outbound calls — qualify leads, answer FAQs,
+                        and book appointments 24/7.</p>
+                    <div class="card-tags"><span>AI Voice</span><span>Inbound</span><span>Outbound</span></div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="card-number">05</div>
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                    </div>
+                    <h3>Chatbots</h3>
+                    <p>Intelligent AI chatbots for your website and messaging platforms — engage visitors, capture leads,
+                        and provide instant support around the clock.</p>
+                    <div class="card-tags"><span>AI Chat</span><span>Lead Capture</span><span>24/7 Support</span></div>
+                </div>
+                <div class="service-card coming-soon" data-tilt>
+                    <div class="card-number">06</div>
+                    <div class="coming-soon-badge">Coming Soon</div>
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <h3>Clinic Automations</h3>
+                    <p>Full clinic workflow automation — appointment scheduling, patient reminders, payment processing,
+                        and more. Tailored for healthcare professionals.</p>
+                    <div class="card-tags"><span>Healthcare</span><span>Scheduling</span><span>Patient CRM</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-visual">
+                    <div class="orbit-scene">
+                        <div class="orbit-core"></div>
+                        <div class="orbit-ring r1">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit-ring r2">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit-ring r3">
+                            <div class="orbit-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="label">Who We Are</span>
+                    <h2>Why choose <em class="gradient-text">Easilee?</em></h2>
+                    <p class="about-lead">
+                        We're a lean, passionate duo obsessed with eliminating busywork. We believe
+                        businesses should spend time growing — not drowning in repetitive tasks.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-marker"></div>
+                            <div>
+                                <h4>End-to-End Automation</h4>
+                                <p>From lead capture to payment collection — we automate your entire business pipeline.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-marker"></div>
+                            <div>
+                                <h4>AI-First Approach</h4>
+                                <p>We leverage the latest AI tools and agents to build smarter, self-improving
+                                    workflows.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-marker"></div>
+                            <div>
+                                <h4>Results-Driven</h4>
+                                <p>Every automation we build is measured by time saved, leads converted, and revenue
+                                    gained.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-row">
+                        <div class="stat-block">
+                            <span class="stat-num" data-count="50">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Clients Served</span>
+                        </div>
+                        <div class="stat-block">
+                            <span class="stat-num" data-count="200">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Automations Deployed</span>
+                        </div>
+                        <div class="stat-block">
+                            <span class="stat-num" data-count="500">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Hours Saved Weekly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK / PORTFOLIO -->
+    <section class="section work" id="work">
+        <div class="container">
+            <div class="section-intro">
+                <span class="label">Our Work</span>
+                <h2>Featured <em class="gradient-text">Projects</em></h2>
+                <p>Real automation solutions delivering real results for our clients</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-visual" style="--card-gradient: linear-gradient(135deg, #a855f7, #7c3aed);">
+                        <span class="project-tag">Real Estate</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Real Estate Automation</h3>
+                        <p>80% automated workflow for a real estate business — lead capture, follow-ups, CRM pipeline,
+                            and a personalised property listing website.</p>
+                        <div class="project-stats">
+                            <span>80% Automated</span>
+                            <span>Custom Website</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-visual" style="--card-gradient: linear-gradient(135deg, #d946ef, #c084fc);">
+                        <span class="project-tag">Healthcare</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Clinic Automation</h3>
+                        <p>Full clinic workflow automation — appointment scheduling, patient reminders, payment
+                            processing, and a professional clinic website.</p>
+                        <div class="project-stats">
+                            <span>Scheduling + CRM</span>
+                            <span>Clinic Website</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-visual" style="--card-gradient: linear-gradient(135deg, #7c3aed, #a855f7);">
+                        <span class="project-tag">Education</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Coaching Centre Automation</h3>
+                        <p>End-to-end automation for coaching centres — student enrollment, batch scheduling, fee
+                            reminders, and a branded institute website.</p>
+                        <div class="project-stats">
+                            <span>Enrollment Automated</span>
+                            <span>Institute Website</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section team" id="team">
+        <div class="container">
+            <div class="section-intro">
+                <span class="label">Our People</span>
+                <h2>Meet the <em class="gradient-text">Founders</em></h2>
+                <p>The duo behind Easilee's automation magic</p>
+            </div>
+            <div class="team-row">
+                <div class="team-member">
+                    <div class="member-card">
+                        <div class="member-front">
+                            <div class="avatar" style="--avatar-gradient: linear-gradient(135deg, #a855f7, #7c3aed);">
+                                <span>AA</span>
+                            </div>
+                            <h3>Ankit Sharma</h3>
+                            <p class="role">Owner & CTO</p>
+                            <div class="flip-cue">Hover to learn more</div>
+                        </div>
+                        <div class="member-back">
+                            <h3>Ankit Sharma</h3>
+                            <p>Tech visionary and automation architect. Builds the systems and AI integrations that
+                                power Easilee's solutions. Passionate about eliminating busywork through code.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-card">
+                        <div class="member-front">
+                            <div class="avatar" style="--avatar-gradient: linear-gradient(135deg, #d946ef, #c084fc);">
+                                <span>HS</span>
+                            </div>
+                            <h3>Hansika Shukra</h3>
+                            <p class="role">Co-Founder & Marketing Expert</p>
+                            <div class="flip-cue">Hover to learn more</div>
+                        </div>
+                        <div class="member-back">
+                            <h3>Hansika Shukra</h3>
+                            <p>Growth strategist and marketing powerhouse. Drives client success, brand strategy, and
+                                business development. Turns automation into revenue for every client.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <span class="label">Get In Touch</span>
+                    <h2>Let's build <em class="gradient-text">together</em></h2>
+                    <p class="contact-lead">
+                        Ready to automate your business? Tell us about your project
+                        and we'll get back to you within 24 hours.
+                    </p>
+                    <div class="info-items">
+                        <a href="mailto:easilee.agents@gmail.com" class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div><strong>Email</strong><span>easilee.agents@gmail.com</span></div>
+                        </a>
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div><strong>Location</strong><span>Surat, Gujarat, India</span></div>
+                        </div>
+                        <a href="tel:+918160289998" class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div><strong>Phone</strong><span>+91 8160289998</span></div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="field">
+                        <input type="text" id="f-name" name="fullName" required autocomplete="name" placeholder=" ">
+                        <label for="f-name">Full Name</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="f-company" name="companyName" placeholder=" ">
+                        <label for="f-company">Company Name</label>
+                    </div>
+                    <div class="field">
+                        <input type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder=" ">
+                        <label for="f-phone">Phone Number</label>
+                    </div>
+                    <div class="field">
+                        <input type="email" id="f-email" name="email" required autocomplete="email" placeholder=" ">
+                        <label for="f-email">Email Address</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="f-budget" name="budget" required placeholder="$500 - $10,000">
+                        <label for="f-budget">Budget Range</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="f-usecase" name="useCase" required placeholder="e.g. Automate my lead follow-ups and booking calls">
+                        <label for="f-usecase">What automations are you looking for?</label>
+                    </div>
+                    <div class="field">
+                        <textarea id="f-msg" name="requirements" rows="3" placeholder=" "></textarea>
+                        <label for="f-msg">Specific Requirements (Optional)</label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit" id="form-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading"><svg class="spinner" width="20" height="20" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none"
+                                    stroke-dasharray="31.4 31.4" stroke-linecap="round" />
+                            </svg></span>
+                        <span class="btn-done">✓ Sent!</span>
+                    </button>
+                    <p class="form-note">*The budget you enter is the one-time setup cost. A separate monthly maintenance fee will be charged thereafter.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-mark">E</div>
+                        <span class="logo-text">easilee</span>
+                    </a>
+                    <p>Making automation accessible, impactful, and easy for businesses worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Lead Automation</a></li>
+                        <li><a href="#services">Follow-Up Automation</a></li>
+                        <li><a href="#services">Callback Handlers</a></li>
+                        <li><a href="#services">Voice / Call Agents</a></li>
+                        <li><a href="#services">Chatbots</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:easilee.agents@gmail.com">easilee.agents@gmail.com</a></li>
+                        <li><a href="tel:+918160289998">+91 8160289998</a></li>
+                        <li><a href="#contact">Surat, Gujarat, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Easilee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
